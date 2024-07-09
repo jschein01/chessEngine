@@ -14,6 +14,8 @@ public class boardRep {
                 System.out.print(board[i][j]);
             }
         }
+        System.out.println("\n");
+        System.out.println(getBasicScore());
     }
 
     public static void initBoard()
@@ -60,5 +62,17 @@ public class boardRep {
         }
     }
 
+    public static int getBasicScore()
+    {
+        int result = 0;
+        for (int i =0; i < 8; i++)
+        {
+            for(int j= 0;j < 8; j++)
+            {
+                result += board[i][j].getValue();
+            }
+        }
+        return result;
+    }
 }
 

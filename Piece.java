@@ -4,14 +4,14 @@ public enum Piece {
     whiteBishop(3, 'w'),
     whiteRook(5, 'w'),
     whiteQueen(9, 'w'),
-    whiteKing(Integer.MAX_VALUE, 'w'),
+    whiteKing(99, 'w'),
 
     blackPawn (-1, 'b'),
     blackKnight(-3, 'b'),
     blackBishop(-3, 'b'),
     blackRook(-5, 'b'),
     blackQueen(-9, 'b'),
-    blackKing(Integer.MIN_VALUE, 'b'),
+    blackKing(-99, 'b'),
 
     empty(0, 'n');
 
